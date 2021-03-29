@@ -1,0 +1,213 @@
+.letters {
+  padding: 30px 0 0;
+
+  background-color: #f5f5f5;
+
+  @include m-lg {
+    padding-top: 60px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg.png);
+    background-position: center;
+  }
+
+  .letters-slider {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 45px 10px 50px;
+    width: 305px;
+
+    overflow: hidden;
+
+    @include m-sm {
+      width: 455px;
+    }
+
+    @include m-lg {
+      width: calc(100% - 40px);
+      padding: 30px 10px 100px;
+      margin: 0 20px;
+    }
+  }
+
+  .letters-list {
+    display: flex;
+
+    .letters-list__item {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+      width: 100%;
+      align-items: center;
+
+      @include m-lg {
+        grid-gap: 30px;
+      }
+    }
+
+    .letters-list__pic {
+      display: flex;
+      padding: 15px;
+      width: 100%;
+      height: 65px;
+
+      background: #FFFFFF;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+
+      overflow: hidden;
+
+      @include m-lg {
+        padding: 30px;
+        height: 160px;
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+
+      img,
+      source {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+      }
+    }
+  }
+
+  .letters-slider-button-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    @include m-lg {
+      top: 80px;
+      right: -20px;
+
+      width: 60px;
+      height: 60px;
+    }
+
+    svg {
+      width: 25px;
+      height: 16px;
+
+      &.desktop {
+        display: none;
+      }
+
+      @include m-lg {
+        width: 15px;
+        height: 60px;
+
+        &.desktop {
+          display: block;
+        }
+
+        &.mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .letters-slider-button-prev {
+    position: absolute;
+    top: 0;
+    right: 45px;
+
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    @include m-lg {
+      top: 80px;
+      right: calc(100% - 40px);
+
+      width: 60px;
+      height: 60px;
+    }
+
+    svg {
+      width: 25px;
+      height: 16px;
+
+      &.desktop {
+        display: none;
+      }
+
+      @include m-lg {
+        width: 15px;
+        height: 60px;
+
+        &.desktop {
+          display: block;
+        }
+
+        &.mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .letters-slider-pagination {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    width: auto;
+    height: 5px;
+    display: flex;
+    align-items: center;
+
+    transform: translateX(-50%);
+
+    @include m-lg {
+      bottom: 60px;
+
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 5px;
+      height: 5px;
+      margin-left: 3px;
+
+      background: #FF3446;
+
+      opacity: 0.2;
+
+      @include m-lg {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: #FF3446;
+
+        opacity: 1;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

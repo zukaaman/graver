@@ -1,0 +1,93 @@
+.where {
+  padding: 30px 0;
+
+  background-color: #ffffff;
+
+  @include m-lg {
+    padding: 60px 0;
+  }
+
+  .main-block {
+    margin-top: 30px;
+
+    .col-lg-12 {
+      margin-top: 15px;
+    }
+  }
+
+  .where__pic {
+    width: 100%;
+    height: 190px;
+    display: block;
+
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    @include m-lg {
+      height: 320px;
+      width: 50%;
+      margin-right: 30px;
+      padding-bottom: 15px;
+
+      float: left;
+    }
+
+    img,
+    source {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  .where__txt {
+    margin-top: 15px;
+
+    font-size: 16px;
+    line-height: 145%;
+    color: #454545;
+
+    @include m-lg {
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .where__link {
+    margin-top: 15px;
+
+    font-size: 16px;
+    line-height: 145%;
+    text-decoration-line: underline;
+    color: #FF3446;
+
+    &.where__link--delete {
+      display: none;
+    }
+
+    @include m-lg {
+      display: none;
+    }
+  }
+
+  .txt-wrapper {
+    display: none;
+    margin-top: 15px;
+
+    &.txt-wrapper--active {
+      display: block;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @include m-lg {
+      display: block;
+    }
+  }
+}

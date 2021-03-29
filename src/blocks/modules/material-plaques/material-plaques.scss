@@ -1,0 +1,160 @@
+.material-plaques {
+  padding: 30px 0;
+
+  background-color: #f5f5f5;
+
+  @include m-lg {
+    padding: 60px 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg.png");
+    background-position: center;
+  }
+
+  .main-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @include m-lg {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .material-plaques__txt--bold {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    text-transform: uppercase;
+    color: #454545;
+
+    @include m-lg {
+      font-size: 30px;
+      line-height: 130%;
+    }
+
+    span {
+      font-weight: 700;
+      color: #FF3446;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 60px;
+      height: 3px;
+
+      background: #FF3446;
+    }
+  }
+
+  .material-plaques__txt {
+    font-size: 14px;
+    line-height: 145%;
+    color: #454545;
+
+    @include m-lg {
+      font-size: 16px;
+    }
+  }
+
+  .material-plaques-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-top: 15px;
+
+    @include m-lg {
+      margin-top: 0;
+      grid-gap: 30px;
+    }
+
+    .material-plaques-list__item {
+      height: 120px;
+
+      border-radius: 3px;
+      box-shadow: 0px 0px 2.49166px rgba(0, 0, 0, 0.25);
+
+      overflow: hidden;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      @include m-lg {
+        height: 190px;
+      }
+    }
+
+    .material-plaques-list__link {
+      position: relative;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      text-decoration: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 40px;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.97) -10.7%, rgba(0, 0, 0, 0) 100%);
+
+        @include m-lg {
+          height: 70px;
+        }
+      }
+    }
+
+    .material-plaques-list__pic {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      img,
+      source {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+    }
+
+    .material-plaques-list__txt {
+      position: absolute;
+      bottom: 7px;
+      left: 50%;
+
+      font-weight: 700;
+      font-size: 11.2125px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+      white-space: nowrap;
+
+      transform: translateX(-50%);
+
+      @include m-lg {
+        bottom: 12px;
+
+        font-size: 18px;
+      }
+    }
+  }
+}
