@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+
+  height: 95px;
+
+  background-image: url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  overflow: hidden;
+
+  .container {
+    padding-top: 21px;
+  }
+
+  .col-contacts {
+    display: flex;
+    align-items: center;
+    height: 31px;
+  }
+
+  .burger {
+    width: 27px;
+    height: 20px;
+    margin-right: 15px;
+
+    overflow: hidden;
+
+    svg {
+      width: 27px;
+      height: 20px;
+    }
+  }
+
+  .logo {
+    width: 132px;
+    height: 31px;
+
+    overflow: hidden;
+
+    svg {
+      width: 132px;
+      height: 31px;
+    }
+  }
+
+  .col-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 31px;
+
+    .cart-btn {
+      width: 20px;
+      height: 20px;
+
+      overflow: hidden;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
