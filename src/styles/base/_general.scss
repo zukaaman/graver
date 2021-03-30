@@ -217,6 +217,7 @@ textarea:focus:-ms-input-placeholder {
     text-transform: uppercase;
     color: #FF3446;
     text-align: center;
+    text-decoration: underline;
 
     @include m-lg {
       padding-top: 20px;

@@ -6,6 +6,19 @@
   background-position: center;
   background-size: cover;
 
+  @include m-lg {
+    background-image: url("../img/banner-bg1.jpg");
+  }
+
+  .col {
+
+    @include m-lg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   .banner__title {
     font-weight: 700;
     font-size: 30px;
@@ -50,6 +63,16 @@
         color: transparent;
       }
     }
+
+    @include m-lg {
+      width: 400px;
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    @include m-xl {
+      width: 550px;
+    }
   }
 
   .banner__btn {
@@ -65,8 +88,15 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 100%;
+    line-height: normal;
     color: #FFFFFF;
     text-transform: uppercase;
+
+    @include m-lg {
+      margin-top: 0;
+      margin-left: 30px;
+
+      font-size: 16px;
+    }
   }
 }
