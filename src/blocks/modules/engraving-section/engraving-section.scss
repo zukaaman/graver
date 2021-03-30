@@ -1,0 +1,132 @@
+.engraving-section {
+  padding: 30px 0;
+
+  background-color: #ffffff;
+
+  @include m-lg {
+    padding: 60px 0;
+  }
+
+  .engraving-section-list {
+    margin-top: 35px;
+
+    @include m-lg {
+      margin-top: 30px;
+
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+    }
+
+    @include m-xl {
+      width: calc(100% - 60px);
+      margin: 30px 30px 0;
+    }
+
+    .engraving-section-list__item {
+      margin-top: 20px;
+
+      @include m-xl {
+        margin-top: 50px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .engraving-section-list__txt {
+      position: relative;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 130%;
+      color: #FF3446;
+      white-space: nowrap;
+
+      cursor: pointer;
+
+      @include m-lg {
+        font-size: 20px;
+
+        &.engraving-section-list__txt--active {
+
+          svg {
+            transform: rotate(0);
+          }
+        }
+      }
+
+      &.engraving-section-list__txt--active {
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      span {
+        margin-left: 15px;
+      }
+
+      svg {
+        width: 12px;
+        height: 8px;
+
+        transition: 0.3s;
+      }
+    }
+
+    .inner-list {
+      margin-top: 15px;
+      display: none;
+
+      @include m-lg {
+        display: block;
+      }
+
+      &.inner-list--active {
+        display: block;
+      }
+
+      .inner-list__item {
+        position: relative;
+
+        padding-left: 20px;
+
+        @include m-lg {
+          padding-left: 25px;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 0;
+
+          width: 5px;
+          height: 5px;
+
+          background: #FF3446;
+          border-radius: 50%;
+
+          @include m-lg {
+            top: 11px;
+
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+
+      .inner-list__link {
+        font-size: 14px;
+        line-height: 195.5%;
+        color: #454545;
+        text-decoration: none;
+
+        @include m-lg {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
