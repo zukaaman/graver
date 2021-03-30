@@ -1,0 +1,58 @@
+.video {
+  padding: 30px 0;
+
+  background-color: #ffffff;
+
+  @include m-lg {
+    padding: 60px 0;
+  }
+
+  .video-main {
+    padding: 15px 0;
+  }
+
+  .video__txt--bold {
+    position: relative;
+
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    text-transform: uppercase;
+    color: #454545;
+
+    @include m-lg {
+      font-size: 30px;
+      line-height: 130%;
+    }
+
+    span {
+      font-weight: 700;
+      color: #FF3446;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 60px;
+      height: 3px;
+
+      background: #FF3446;
+    }
+  }
+
+  .video__txt {
+    font-size: 14px;
+    line-height: 145%;
+    color: #454545;
+
+    @include m-lg {
+      display: none;
+    }
+  }
+}
