@@ -19,3 +19,33 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('montserrat-bold-webfont.eot');
+  src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+       url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratmedium';
+  src: url('montserrat-medium-webfont.eot');
+  src: url('../fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-medium-webfont.woff') format('woff'),
+       url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('montserrat-regular-webfont.eot');
+  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+       url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

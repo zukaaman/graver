@@ -8,6 +8,10 @@
 
   overflow: hidden;
 
+  &.footer--remove {
+    display: none;
+  }
+
   @include m-lg {
     padding: 45px 0 20px;
   }
@@ -258,6 +262,7 @@
           text-decoration: none;
 
           @include m-lg {
+            font-family: 'montserratmedium';
             font-weight: 500;
             font-size: 12px;
           }
@@ -274,6 +279,7 @@
       color: #FFFFFF;
 
       @include m-lg {
+        font-family: 'montserratmedium';
         font-weight: 500;
         font-size: 12px;
       }
@@ -289,6 +295,13 @@
         align-items: center;
 
         border-bottom: 1px solid #E4E4E4;
+
+        &.nav-list__item--mobile {
+
+          @include m-lg {
+            display: none;
+          }
+        }
 
         &.nav-list__item--services {
           display: none;
@@ -329,6 +342,7 @@
       background: #FF3446;
       border-radius: 3px;
 
+      font-family: 'montserratbold';
       font-weight: 700;
       font-size: 14px;
       line-height: 100%;
@@ -343,6 +357,7 @@
       display: block;
       margin-top: 15px;
 
+      font-family: 'montserratbold';
       font-weight: 700;
       font-size: 14px;
       line-height: 130%;
