@@ -262,7 +262,6 @@
           text-decoration: none;
 
           @include m-lg {
-            font-family: 'montserratmedium';
             font-weight: 500;
             font-size: 12px;
           }
@@ -279,7 +278,6 @@
       color: #FFFFFF;
 
       @include m-lg {
-        font-family: 'montserratmedium';
         font-weight: 500;
         font-size: 12px;
       }
@@ -342,7 +340,6 @@
       background: #FF3446;
       border-radius: 3px;
 
-      font-family: 'montserratbold';
       font-weight: 700;
       font-size: 14px;
       line-height: 100%;
@@ -357,7 +354,6 @@
       display: block;
       margin-top: 15px;
 
-      font-family: 'montserratbold';
       font-weight: 700;
       font-size: 14px;
       line-height: 130%;
