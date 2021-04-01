@@ -7,34 +7,10 @@
     padding: 60px 0;
   }
 
-  .equipment__title {
-    position: relative;
-
-    padding-bottom: 15px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 100%;
-    text-transform: uppercase;
-    color: #454545;
-    text-align: center;
-
-    @include m-lg {
-      font-size: 38px;
-    }
+  .title-block {
 
     &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-
-      width: 60px;
-      height: 3px;
-
-      background: #FF3446;
-
-      transform: translateX(-50%);
+      content: none;
     }
   }
 
@@ -52,7 +28,11 @@
     overflow: hidden;
 
     @include m-lg {
-      height: 100%;
+      width: 50%;
+      height: 320px;
+      margin: 0 30px 15px 0;
+
+      float: left;
     }
 
     img,
@@ -73,7 +53,7 @@
 
     @include m-lg {
 
-      &:first-child {
+      &:first-of-type {
         margin-top: 0;
       }
     }

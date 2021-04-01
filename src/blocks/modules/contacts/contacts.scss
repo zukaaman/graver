@@ -3,14 +3,25 @@
 
   background-color: #ffffff;
 
+  @include m-lg {
+    padding-top: 60px;
+  }
+
   .contacts-block {
-    padding-bottom: 30px;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
 
     background-color: #ffffff;
 
-    .contacts-block__title {
-      margin-top: 30px;
+    @include m-lg {
+      width: 840px;
+      margin: 60px auto;
+      grid-template-columns: repeat(3, 260px);
+    }
 
+    .contacts-block__title {
       font-weight: 700;
       font-size: 25px;
       line-height: 130%;
