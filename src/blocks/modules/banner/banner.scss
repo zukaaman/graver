@@ -10,6 +10,33 @@
     background-image: url("../img/banner-bg1.jpg");
   }
 
+  &.banner--goods {
+
+    @include m-lg {
+      margin-top: 60px;
+    }
+
+    .banner__title {
+      width: 100%;
+
+      text-align: center;
+
+      @include m-lg {
+        font-size: 40px;
+        line-height: 48px;
+      }
+
+      span {
+        font-weight: 700;
+
+        @include m-lg {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+
   .col {
 
     @include m-lg {

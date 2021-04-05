@@ -3,7 +3,8 @@
 
   background-color: #ffffff;
 
-  .with-silder {
+  .with-slider,
+  .recommended-slider {
     padding: 45px 10px 30px;
     width: calc(100% + 20px);
     margin-left: -10px;
@@ -24,6 +25,37 @@
       background: #FFFFFF;
       box-shadow: 0px 0px 5.27138px rgba(0, 0, 0, 0.5);
       border-radius: 3px;
+    }
+
+    .slider-list__actions {
+      position: absolute;
+      top: 5px;
+      left: -5px;
+      z-index: 10;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px;
+      height: 20px;
+
+      font-weight: 700;
+      font-size: 7px;
+      line-height: 100%;
+      color: #FFFFFF;
+
+      background: #F64E60;
+      border-radius: 3px;
+
+      @include m-lg {
+        top: 10px;
+        left: -10px;
+
+        padding: 0 10px;
+        height: 40px;
+
+        font-size: 14px;
+      }
     }
 
     .slider-list__pic {
@@ -56,6 +88,7 @@
 
     .slider-list__name {
       padding-bottom: 3px;
+      margin-bottom: 5px;
       display: inline-block;
 
       font-weight: 700;
@@ -127,7 +160,54 @@
     }
   }
 
-  .goods-slider-button-next {
+  .goods-slider-pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+
+    width: auto;
+    height: 5px;
+    display: flex;
+    align-items: center;
+
+    transform: translateX(-50%);
+
+    @include m-lg {
+      bottom: 20px;
+
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 5px;
+      height: 5px;
+      margin: 0;
+      margin-left: 3px;
+
+      background: #FF3446;
+
+      opacity: 0.2;
+
+      @include m-lg {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: #FF3446;
+
+        opacity: 1;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .goods-slider-button-next,
+  .recommended-slider-button-next {
     position: absolute;
     top: 0;
     right: 0;
@@ -171,7 +251,8 @@
     }
   }
 
-  .goods-slider-button-prev {
+  .goods-slider-button-prev,
+  .recommended-slider-button-prev {
     position: absolute;
     top: 0;
     right: 45px;
@@ -213,5 +294,12 @@
         }
       }
     }
+  }
+}
+
+.body--item {
+
+  .goods-list {
+    padding: 0;
   }
 }
