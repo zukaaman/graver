@@ -62,7 +62,10 @@
         transition: 0.3s;
 
         &:hover {
-          transform: scale(1.05);
+
+          @include m-lg {
+            transform: scale(1.05);
+          }
         }
 
         @include m-lg {
@@ -79,6 +82,10 @@
           height: 40.7px;
 
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.97) -10.7%, rgba(0, 0, 0, 0) 100%);
+
+          @include m-lg {
+            height: 65px;
+          }
         }
       }
 

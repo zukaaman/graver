@@ -82,7 +82,10 @@
       transition: 0.3s;
 
       &:hover {
-        transform: scale(1.05);
+
+        @include m-lg {
+          transform: scale(1.05);
+        }
       }
 
       @include m-lg {
