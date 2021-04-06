@@ -24,6 +24,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="styles/lightgallery.min.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
@@ -68,7 +69,7 @@
           </div>
         </div>
       </form>
-      <!-- @@include("../blocks/modules/video/video.html") -->
+      @@include("../blocks/modules/video/video.html")
       @@include("../blocks/modules/reviews/reviews.html")
       @@include("../blocks/modules/material-engraving/material-engraving.html")
       @@include("../blocks/modules/material-plaques/material-plaques.html")
@@ -83,8 +84,18 @@
     @@include("../blocks/modules/footer/footer.html")
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $('#gallery').lightGallery({
+        thumbnail: false,
+        download: false,
+        loop: true,
+        hideControlOnEnd: false,
+      });
 
+
+    </script>
   </body>
 </html>
