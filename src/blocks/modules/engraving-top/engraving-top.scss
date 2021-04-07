@@ -1,21 +1,21 @@
-.services {
-  padding: 30px 0 15px;
+.engraving-top {
+  padding: 30px 0 30px;
 
   background-color: #ffffff;
 
   @include m-lg {
-    padding: 60px 0 30px;
+    padding: 60px 0 40px;
   }
 
   .inner-wrapper {
 
-    @include m-lg {
-      margin: 0 auto;
+    @include m-xl {
       width: 1020px;
+      margin: 0 auto;
     }
   }
 
-  .services__txt {
+  .engraving-top__txt {
     margin-top: 15px;
 
     font-size: 14px;
@@ -30,41 +30,45 @@
     }
   }
 
-  .services-list {
+  .engraving-top-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
+    width: 100%;
 
     @include m-lg {
-      width: calc((260px * 3) + 60px);
-      margin: 30px 130px 0;
+      margin-top: 30px;
     }
 
-    .services-list__item {
+    .engraving-top-list__item {
       margin-bottom: 15px;
       width: calc((100% - 15px) / 2);
-      height: 120px;
+      height: 80px;
       margin-right: 15px;
 
       border-radius: 3px;
-      box-shadow: 0px 0px 2.49166px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 
       overflow: hidden;
 
       transition: 0.3s;
       cursor: pointer;
 
-      &:hover {
+      @include m-sm {
+        height: 120px;
+      }
 
-        @include m-lg {
-          transform: scale(1.05);
-        }
+      @include m-md {
+        height: 140px;
       }
 
       @include m-lg {
-        width: calc((100% - 60px) / 3);
-        height: 190px;
+        height: 160px;
+      }
+
+      @include m-xl {
+        width: 320px;
         margin-left: 30px;
         margin-bottom: 30px;
         margin-right: 0;
@@ -80,21 +84,35 @@
 
       &:nth-child(2n) {
         margin-right: 0;
-
-        @include m-lg {
-          // margin-left: 30px;
-        }
       }
     }
 
-    .services-list__link {
+    .engraving-top-list__link {
       position: relative;
 
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
 
       text-decoration: none;
+
+      &:hover {
+
+        @include m-lg {
+
+          &::before {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .engraving-top-list__txt {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
 
       &::before {
         content: "";
@@ -107,27 +125,43 @@
 
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.97) -10.7%, rgba(0, 0, 0, 0) 100%);
 
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
         @include m-lg {
           height: 65px;
         }
       }
     }
 
-    .services-list__pic {
+    .engraving-top-list__pic {
       width: 100%;
+      max-width: 125px;
       height: 100%;
+      max-height: 55px;
       display: block;
+
+      @include m-md {
+        max-width: 200px;
+        max-height: 65px;
+      }
+
+      @include m-lg {
+        max-width: 240px;
+        max-height: 105px;
+      }
 
       img,
       source {
         width: 100%;
         height: 100%;
 
-        object-fit: cover;
+        object-fit: contain;
       }
     }
 
-    .services-list__txt {
+    .engraving-top-list__txt {
       position: absolute;
       bottom: 7px;
       left: 50%;
@@ -141,6 +175,17 @@
       white-space: nowrap;
 
       transform: translateX(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+
+      &:hover {
+
+        @include m-lg {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
 
       @include m-lg {
         bottom: 12px;

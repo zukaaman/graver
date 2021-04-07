@@ -3,6 +3,14 @@
 
   background-color: #f5f5f5;
 
+  &.works--white {
+    background-color: #ffffff;
+
+    @include m-lg {
+      background: none;
+    }
+  }
+
   @include m-lg {
     padding: 60px 0;
 

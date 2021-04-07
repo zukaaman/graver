@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>graver</title>
+    <title>graver/engraving</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -32,32 +32,18 @@
     @@include("../blocks/modules/header/header.html")
     @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
     <main>
-      @@include("../blocks/modules/services/services.html")
-      @@include("../blocks/modules/engraving/engraving.html")
-      <form class="banner">
+      @@include("../blocks/modules/engraving-top/engraving-top.html")
+      @@include("../blocks/modules/cost/cost.html")
+      @@include("../blocks/modules/works-white/works-white.html")
+      <div class="banner  banner--goods">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="banner__title"><span>Скидка 10%</span> на первый заказ</h2>
-              <input class="banner__input" type="email" placeholder="E-mail" required>
-              <button class="banner__btn" type="submit">ПРОМОКОД</button>
+              <h2 class="banner__title"><span>Скидка 10%</span> при покупке наших товаров</h2>
             </div>
           </div>
         </div>
-      </form>
-      @@include("../blocks/modules/plaques/plaques.html")
-      <form class="banner">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="banner__title"><span>Скидка 10%</span> за подписку</h2>
-              <input class="banner__input" type="email" placeholder="E-mail" required>
-              <button class="banner__btn" type="submit">подписаться</button>
-            </div>
-          </div>
-        </div>
-      </form>
-      @@include("../blocks/modules/goods/goods.html")
+      </div>
       <form class="banner">
         <div class="container">
           <div class="row">
@@ -70,13 +56,9 @@
         </div>
       </form>
       @@include("../blocks/modules/video/video.html")
-      @@include("../blocks/modules/reviews/reviews.html")
-      @@include("../blocks/modules/material-engraving/material-engraving.html")
-      @@include("../blocks/modules/material-plaques/material-plaques.html")
       @@include("../blocks/modules/engraving-section/engraving-section.html")
-      @@include("../blocks/modules/works/works.html")
+      @@include("../blocks/modules/reviews/reviews.html")
       @@include("../blocks/modules/trust/trust.html")
-      @@include("../blocks/modules/letters/letters.html")
       @@include("../blocks/modules/lazer/lazer.html")
       @@include("../blocks/modules/how/how.html")
       @@include("../blocks/modules/where/where.html")
