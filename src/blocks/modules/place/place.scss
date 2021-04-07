@@ -1,0 +1,50 @@
+.place {
+  padding: 30px 0;
+
+  background-color: #ffffff;
+
+  .place__txt {
+    margin-top: 15px;
+
+    font-size: 14px;
+    line-height: 145%;
+    color: #454545;
+
+    @include m-lg {
+      margin-top: 20px;
+
+      font-size: 16px;
+    }
+  }
+
+  .inner-wrapper {
+
+    @include m-lg {
+      margin: 0 auto;
+      width: 1080px;
+    }
+  }
+
+  .place-list {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+
+    @include m-lg {
+      margin: 30px 0;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+
+    .place-list__item {
+      height: 165px;
+
+      background: #C4C4C4;
+
+      @include m-lg {
+        height: 330px;
+      }
+    }
+  }
+}
