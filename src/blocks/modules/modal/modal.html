@@ -1,0 +1,261 @@
+<div class="modal  modal--callback">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">Заказать звонок</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <input id="callback-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="callback-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">отправить заявку</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--order">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">Заказать</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <input class="modal-form__input" type="email" placeholder="E-mail*" required>
+      <textarea class="modal-form__textarea" placeholder="Что вы хотите заказать?"></textarea>
+      <input id="order-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="order-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">заказать</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--wholesale">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title"><span>у меня </span>оптовый заказ</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <input class="modal-form__input" type="email" placeholder="E-mail*" required>
+      <textarea class="modal-form__textarea" placeholder="Что вы хотите заказать?"></textarea>
+      <input id="wholesale-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="wholesale-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">заказать</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--question">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">ВОзникли вопросы</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <textarea class="modal-form__textarea" placeholder="Что вы хотите узнать?"></textarea>
+      <input id="question-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="question-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">отправить заявку</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--ordering">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">оформление заказа</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <div class="item-wrapper">
+        <button class="cart-list__delete-btn">
+          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1.88507L8.99286 0.87793L5 4.87079L1.00714 0.87793L0 1.88507L3.99286 5.87793L0 9.87079L1.00714 10.8779L5 6.88507L8.99286 10.8779L10 9.87079L6.00714 5.87793L10 1.88507Z" fill="#454545"/>
+          </svg>
+        </button>
+        <picture class="cart-list__pic">
+          <source srcset="img/img7.webp">
+          <img src="img/img7.jpg" alt="#">
+        </picture>
+        <div class="txt-wrapper">
+          <p class="cart-list__name">Зажигалка zippo silver</p>
+          <p class="cart-list__txt">Артикул 123123</p>
+          <p class="cart-list__txt">Бренд Zippo</p>
+          <p class="cart-list__txt">Размеры 30х50х10 мм</p>
+        </div>
+        <div class="price-wrapper">
+          <p class="cart-list__txt">Цена:</p>
+          <p class="cart-list__price">2000 руб</p>
+        </div>
+        <div class="quantity-wrapper">
+          <button class="quantity__btn  quantity__btn--minus">-</button>
+          <input type="text" value="1" class="quantity__txt" readonly>
+          <button class="quantity__btn  quantity__btn--plus">+</button>
+        </div>
+      </div>
+      <input id="ordering-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="ordering-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">заказать</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--cart modal--active">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">оформление заказа</h2>
+    <form class="modal-form">
+      <p class="modal-form__txt">ФИО</p>
+      <input class="modal-form__input" type="text" placeholder="ФИО">
+      <p class="modal-form__txt">Номер телефона</p>
+      <input class="modal-form__input" type="tel" placeholder="8 (888) 888-88-88" required>
+      <p class="modal-form__txt">E-mail</p>
+      <input class="modal-form__input" type="email" placeholder="Name@pochta.ru" required>
+      <p class="modal-form__txt">Способ доставки</p>
+      <input id="d1-check" class="modal-form__checkbox" type="radio" name="delivery" required>
+      <label for="d1-check"  class="modal-form__label">
+        <p class="modal-form__txt">Самовывоз</p>
+        <p class="modal-form__subtext">(Москва, ул. Бакунинская 14, ст. 11)</p>
+      </label>
+      <input id="d2-check" class="modal-form__checkbox" type="radio" name="delivery" checked required>
+      <label for="d2-check"  class="modal-form__label">
+        <p class="modal-form__txt">Доставка</p>
+      </label>
+      <p class="modal-form__txt">Адрес доставки</p>
+      <input class="modal-form__input" type="text" placeholder="Ул. Нижняя д. 3 кв. 653">
+      <p class="modal-form__txt">Способ оплаты</p>
+      <input id="d1-check" class="modal-form__checkbox" type="radio" name="payment" required>
+      <label for="d1-check"  class="modal-form__label">
+        <p class="modal-form__txt">Наличными</p>
+      </label>
+      <input id="d2-check" class="modal-form__checkbox" type="radio" name="payment" checked required>
+      <label for="d2-check"  class="modal-form__label">
+        <p class="modal-form__txt">Банковской картой</p>
+      </label>
+      <input id="d2-check" class="modal-form__checkbox" type="radio" name="payment" required>
+      <label for="d2-check"  class="modal-form__label">
+        <p class="modal-form__txt">Доставка</p>
+      </label>
+      <button class="modal-form__btn">оформить заказ</button>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--size">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">у меня другой размер</h2>
+    <form class="modal-form">
+      <input class="modal-form__input" type="text" placeholder="Имя">
+      <input class="modal-form__input" type="tel" placeholder="Номер телефона*" required>
+      <input class="modal-form__input" type="email" placeholder="E-mail*" required>
+      <input class="modal-form__input" type="text" placeholder="Размер*">
+      <textarea class="modal-form__textarea" placeholder="Что вы хотите узнать?"></textarea>
+      <input id="size-check" class="modal-form__checkbox" type="checkbox" checked required>
+      <label for="size-check"  class="modal-form__label">Нажимая на кнопку Отправить, Вы  соглашаетесь с <a href="#">правилами обработки персональных данных</a></label>
+      <button class="modal-form__btn">отправить заявку</button>
+      <p class="modal-form__subtext" type="submit">*Поля обязательные для заполения</p>
+    </form>
+  </div>
+</div>
+<div class="modal  modal--popup">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <div class="banner">
+      <p class="banner__name">СКидка</p>
+      <p class="banner__title">Мы снизили цену на <span>10%</span></p>
+      <ul class="banner-list">
+        <li class="banner-list__item">На гравировку Macbook</li>
+        <li class="banner-list__item">На гравировку Xiaomi</li>
+      </ul>
+    </div>
+    <ul class="cost-list">
+      <li class="cost-list_item">
+        <p class="cost-list__title">Наименование</p>
+        <p class="cost-list__title">способ нанесения</p>
+        <p class="cost-list__title">стоимость</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Macbook</p>
+        <p class="cost-list__method">С подсветкой</p>
+        <p class="cost-list__cost">1200 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Xiaomi</p>
+        <p class="cost-list__method">С заливкой</p>
+        <p class="cost-list__cost">800 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Xiaomi</p>
+        <p class="cost-list__method">С подсветкой</p>
+        <p class="cost-list__cost">800 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Asus</p>
+        <p class="cost-list__method">С заливкой</p>
+        <p class="cost-list__cost">1200 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Macbook</p>
+        <p class="cost-list__method">С подсветкой</p>
+        <p class="cost-list__cost">1200 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Asus</p>
+        <p class="cost-list__method">С подсветкой</p>
+        <p class="cost-list__cost">800 руб</p>
+      </li>
+      <li class="cost-list_item">
+        <p class="cost-list__name">Macbook</p>
+        <p class="cost-list__method">С подсветкой</p>
+        <p class="cost-list__cost">1200 руб</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="modal  modal--thx">
+  <button class="modal__close-btn"></button>
+  <div class="wrapper">
+    <h2 class="modal__title">спасибо, что выбрали нас</h2>
+    <p class="modal__txt">В ближайшее время с вами свяжется наш менеджер для подтвержения заказа </p>
+    <div class="socials-txt">Мы в соц. сетях</div>
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.4871 0.926758C7.21584 0.926758 0.482544 7.64432 0.47954 15.9033C0.478038 18.5433 1.17054 21.1206 2.48348 23.3916L0.447266 30.9268L8.30751 29.0723C10.4992 30.2663 12.9665 30.893 15.4783 30.8945H15.4841C23.7538 30.8945 30.4842 24.1755 30.4887 15.918C30.4917 11.9145 28.9326 8.15036 26.0994 5.31836C23.2662 2.48786 19.501 0.928258 15.4871 0.926758ZM15.4841 3.92676C18.6929 3.92826 21.7083 5.17745 23.9752 7.43945C26.242 9.70445 27.4873 12.714 27.4843 15.915C27.4813 22.521 22.1 27.8945 15.4812 27.8945C13.4787 27.893 11.4952 27.391 9.74811 26.4385L8.73588 25.8877L7.61801 26.1514L4.66052 26.8486L5.38229 24.1709L5.70797 22.9697L5.08595 21.8916C4.0374 20.0796 3.48248 18.0078 3.48398 15.9033C3.48698 9.30032 8.86985 3.92676 15.4841 3.92676ZM10.1765 8.98926C9.92561 8.98926 9.51999 9.08301 9.17598 9.45801C8.83197 9.83151 7.86154 10.7361 7.86154 12.5781C7.86154 14.4201 9.20532 16.2007 9.3931 16.4512C9.57937 16.7002 11.9869 20.5996 15.7981 22.0996C18.9647 23.3461 19.6079 23.1001 20.2959 23.0371C20.9839 22.9756 22.5155 22.1333 22.828 21.2588C23.1404 20.3843 23.1412 19.632 23.048 19.4775C22.9549 19.3215 22.7048 19.2285 22.3292 19.041C21.9551 18.8535 20.1118 17.9497 19.7678 17.8252C19.4238 17.7007 19.1722 17.6377 18.9228 18.0127C18.6734 18.3877 17.9568 19.2285 17.7375 19.4775C17.5181 19.728 17.3003 19.7617 16.9247 19.5742C16.5492 19.3852 15.3417 18.9889 13.9086 17.7139C12.7939 16.7224 12.0418 15.499 11.8225 15.124C11.6046 14.7505 11.8019 14.5454 11.9897 14.3594C12.158 14.1914 12.3623 13.9221 12.5501 13.7031C12.7364 13.4841 12.801 13.3281 12.9257 13.0791C13.0503 12.8301 12.9865 12.6104 12.8934 12.4229C12.8002 12.2354 12.0709 10.3865 11.7374 9.64551C11.4565 9.02301 11.1598 9.00855 10.8924 8.99805C10.6746 8.98905 10.4258 8.98926 10.1765 8.98926Z" fill="#5DED46"/>
+        </svg>
+      </li>
+      <li class="socials-list__item">
+        <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28.4094 0.944695C27.9101 0.89182 27.3674 0.96968 26.8221 1.18493C26.1461 1.45043 15.5536 5.89966 5.6795 10.0502L2.41687 11.4213C1.1535 11.9328 0.515625 12.7646 0.515625 13.8851C0.515625 14.6696 0.848132 15.7337 2.43447 16.3607L7.94163 18.5638C8.41784 19.9903 9.52389 23.3025 9.8018 24.183C9.96705 24.705 10.3844 26.02 11.439 26.3275C11.6553 26.401 11.881 26.4388 12.1109 26.4388C12.7764 26.4388 13.2555 26.1296 13.4899 25.9496L16.9902 22.9935L21.2416 26.9193C21.4053 27.0858 22.272 27.9271 23.4362 27.9271C24.8888 27.9271 25.9907 26.7196 26.2206 25.5511C26.3453 24.9106 30.4456 4.35771 30.4456 4.36071C30.8136 2.71221 30.1519 1.85705 29.7267 1.49255C29.3625 1.1813 28.9087 0.99757 28.4094 0.944695ZM27.4147 4.18493C26.8484 7.01993 23.7611 22.4945 23.2924 24.725L17.0782 18.9857L12.862 22.5511L14.0297 17.9896C14.0297 17.9896 22.0854 9.84741 22.5707 9.37341C22.9612 8.99391 23.043 8.86087 23.043 8.72887C23.043 8.55337 22.9526 8.42712 22.7438 8.42712C22.556 8.42712 22.301 8.60679 22.1658 8.69079C20.4482 9.76001 13.1345 13.9205 9.53481 15.9652L4.31225 13.8822L6.84724 12.8187C13.3053 10.1037 24.8069 5.26793 27.4147 4.18493Z" fill="#3FC2FA"/>
+        </svg>
+      </li>
+    </ul>
+    <p class="recommended-txt">Рекомендуемые разделы, на основе вашего выбора</p>
+    <ul class="recommended-list">
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Гравировка на металле</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Таблички на дверь</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Гравировка на стекле</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Фасадные таблики</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Гравировка на коже</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Таблички на стол</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Гравировка на дереве</a>
+      </li>
+      <li class="recommended-list__item">
+        <a class="recommended-list__link" href="#">Шильды</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="modal-overlay  modal-overlay--active"></div>
