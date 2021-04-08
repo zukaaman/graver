@@ -1,84 +1,84 @@
-.body--item {
+// .body--item {
 
-  .modal--popup {
-    animation: popup 1s ease-out;
+//   .modal--popup {
+//     animation: popup 1s ease-out;
 
-    @keyframes popup {
-      0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0);
-      }
+//     @keyframes popup {
+//       0% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0);
+//       }
 
-      10% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.1);
-      }
+//       10% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.1);
+//       }
 
-      20% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.2);
-      }
+//       20% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.2);
+//       }
 
-      30% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.3);
-      }
+//       30% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.3);
+//       }
 
-      40% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.4);
-      }
+//       40% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.4);
+//       }
 
-      50% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.5);
-      }
+//       50% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.5);
+//       }
 
-      60% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.6);
-      }
+//       60% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.6);
+//       }
 
-      70% {
-        opacity: 0.1;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.7);
-      }
+//       70% {
+//         opacity: 0.1;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.7);
+//       }
 
-      80% {
-        opacity: 0.2;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.8);
-      }
+//       80% {
+//         opacity: 0.2;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.8);
+//       }
 
-      90% {
-        opacity: 0.3;
-        visibility: hidden;
-        transform: translate(-50%, -50%) scale(0.9);
-      }
+//       90% {
+//         opacity: 0.3;
+//         visibility: hidden;
+//         transform: translate(-50%, -50%) scale(0.9);
+//       }
 
-      100% {
-        opacity: 1;
-        visibility: visible;
-        transform: translate(-50%, -50%) scale(1);
-      }
-    }
-  }
+//       100% {
+//         opacity: 1;
+//         visibility: visible;
+//         transform: translate(-50%, -50%) scale(1);
+//       }
+//     }
+//   }
 
-  .modal-overlay {
-    animation: popup 0.3s ease-in-out;
-  }
-}
+//   .modal-overlay {
+//     animation: popup 0.3s ease-in-out;
+//   }
+// }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 100;

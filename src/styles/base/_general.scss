@@ -231,6 +231,8 @@ textarea:focus:-ms-input-placeholder {
     text-align: center;
     text-decoration: underline;
 
+    cursor: pointer;
+
     @include m-lg {
       padding-top: 20px;
 
