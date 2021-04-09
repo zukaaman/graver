@@ -37,6 +37,13 @@
     }
   }
 
+  .ecec {
+
+    @include m-lg {
+      position: absolute;
+    }
+  }
+
   .img-list {
     display: none;
     justify-content: space-between;

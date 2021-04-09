@@ -162,11 +162,20 @@
     .wrapper {
       position: relative;
 
+      display: block;
+
+      text-decoration: none;
+
       background: #FFFFFF;
       box-shadow: 0px 0px 5.27138px rgba(0, 0, 0, 0.5);
       border-radius: 3px;
 
+      @include m-lg {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      }
+
       &:hover {
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 
         .slider-list__cart-btn {
           opacity: 1;
@@ -229,6 +238,14 @@
 
         font-size: 14px;
       }
+    }
+
+    .slider-list__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      text-decoration: none;
     }
 
     .slider-list__pic {
