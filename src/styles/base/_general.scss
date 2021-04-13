@@ -13,11 +13,6 @@ body {
   overflow-x: hidden;
 
   background-color: #ffffff;
-
-  &.body--freeze {
-    // position:fixed;
-    overflow: scroll;
-  }
 }
 
 main {

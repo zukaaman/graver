@@ -358,6 +358,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 49;
 
     width: 45px;
     height: 45px;
@@ -368,7 +369,11 @@
     cursor: pointer;
 
     @include m-lg {
-      display: none;
+      top: 415px;
+      right: -20px;
+
+      width: 60px;
+      height: 60px;
     }
 
     svg {
@@ -378,6 +383,19 @@
       &.desktop {
         display: none;
       }
+
+      @include m-lg {
+        width: 15px;
+        height: 60px;
+
+        &.desktop {
+          display: block;
+        }
+
+        &.mobile {
+          display: none;
+        }
+      }
     }
   }
 
@@ -385,6 +403,7 @@
     position: absolute;
     top: 0;
     right: 45px;
+    z-index: 49;
 
     width: 45px;
     height: 45px;
@@ -395,7 +414,11 @@
     cursor: pointer;
 
     @include m-lg {
-      display: none;
+      top: 415px;
+      right: calc(100% - 40px);
+
+      width: 60px;
+      height: 60px;
     }
 
     svg {
@@ -404,6 +427,19 @@
 
       &.desktop {
         display: none;
+      }
+
+      @include m-lg {
+        width: 15px;
+        height: 60px;
+
+        &.desktop {
+          display: block;
+        }
+
+        &.mobile {
+          display: none;
+        }
       }
     }
   }
@@ -563,11 +599,7 @@
     cursor: pointer;
 
     @include m-lg {
-      top: 80px;
-      right: -20px;
-
-      width: 60px;
-      height: 60px;
+      display: none;
     }
 
     svg {
@@ -607,11 +639,7 @@
     cursor: pointer;
 
     @include m-lg {
-      top: 80px;
-      right: calc(100% - 40px);
-
-      width: 60px;
-      height: 60px;
+      display: none;
     }
 
     svg {
