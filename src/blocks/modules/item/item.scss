@@ -109,8 +109,6 @@
       color: #FF3446;
 
       @include m-lg {
-        margin-left: 25px;
-
         font-size: 16px;
       }
     }
@@ -256,7 +254,7 @@
     .engraving-btn {
       position: absolute;
       bottom: -45px;
-      left: 25px;
+      left: 0;
 
       display: none;
       margin-top: 30px;
