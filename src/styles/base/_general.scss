@@ -16,6 +16,7 @@ body {
 }
 
 main {
+  overflow-x: hidden;
 
   &.main--remove {
     display: none;

@@ -89,6 +89,17 @@
 
       overflow: hidden;
 
+      // &.reviews-list__txt--open {
+
+
+      //   // text-decoration: underline;
+
+      //   @include m-lg {
+      //     // text-decoration: underline;
+      //     display: none;
+      //   }
+      // }
+
       @include m-lg {
         font-size: 16px;
         -webkit-line-clamp: 6;

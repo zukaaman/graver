@@ -592,7 +592,7 @@
     }
 
     .engraving-wrapper {
-      margin-top: 15px;
+      margin-top: 25px;
 
       @include m-lg {
         grid-row: 4 / 5;
@@ -601,7 +601,7 @@
 
       .engraving-title {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 100%;
         text-transform: uppercase;
         color: #454545;

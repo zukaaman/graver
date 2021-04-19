@@ -9,14 +9,14 @@
   background-position: center;
   background-size: cover;
 
-  // overflow: hidden;
-
-  @include m-lg {
-    background-image: url("../img/header-bg1.jpg");
-  }
+  overflow-x: hidden;
 
   @include m-lg {
     height: auto;
+
+    background-image: url("../img/header-bg1.jpg");
+
+    overflow-x: visible;
   }
 
   .top-row {
