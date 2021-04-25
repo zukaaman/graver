@@ -34,6 +34,7 @@
 
   .reviews-list {
     display: flex;
+    height: auto !important;
 
     .reviews-list__item {
       display: flex;
@@ -78,36 +79,39 @@
 
     .reviews-list__txt {
       margin-top: 15px;
-      display: -webkit-box;
+      max-height: 162px;
 
       font-size: 14px;
       line-height: 130%;
       color: #454545;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      text-overflow: ellipsis;
+      // -webkit-line-clamp: 4;
+      // -webkit-box-orient: vertical;
+      // text-overflow: ellipsis;
 
       overflow: hidden;
 
-      // &.reviews-list__txt--open {
+      &.reviews-list__txt--open {
+        max-height: none;
 
 
-      //   // text-decoration: underline;
 
-      //   @include m-lg {
-      //     // text-decoration: underline;
-      //     display: none;
-      //   }
-      // }
+        // text-decoration: underline;
+
+        @include m-lg {
+          // height: auto;
+        }
+      }
 
       @include m-lg {
+        // height: 162px;
+
         font-size: 16px;
-        -webkit-line-clamp: 6;
+        // -webkit-line-clamp: 6;
       }
     }
 
     .reviews-list__btn {
-      display: none;
+      // display: none;
       margin-top: 5px;
 
       font-size: 16px;
@@ -116,7 +120,7 @@
       color: #FF3446;
 
       @include m-lg {
-        display: block;
+        // display: block;
       }
     }
 

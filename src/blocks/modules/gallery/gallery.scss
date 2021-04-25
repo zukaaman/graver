@@ -141,6 +141,13 @@
     display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
+    max-height: 410px;
+
+    overflow: hidden;
+
+    &.gallery-list--open {
+      max-height: none;
+    }
 
     &.gallery-list--active {
       display: grid;
@@ -243,6 +250,13 @@
         opacity: 0;
         visibility: hidden;
       }
+    }
+  }
+
+  .gallery-btn {
+
+    &.gallery-btn--remove {
+      display: none;
     }
   }
 }

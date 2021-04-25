@@ -489,7 +489,7 @@
       @include m-lg {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row: 5 / 6;
+        grid-row: 6 / 7;
         grid-gap: 15px 0;
       }
 
@@ -561,6 +561,13 @@
 
       @include m-lg {
         grid-row: 3 / 4;
+        max-height: 73px;
+
+        overflow: hidden;
+      }
+
+      &.txt-wrapper--open {
+        max-height: none;
       }
 
       .txt {
@@ -579,15 +586,20 @@
           margin-top: 0;
         }
       }
+    }
 
-      .txt-btn {
-        margin-top: 10px;
+    .txt-btn {
+      margin-top: 10px;
+      margin-right: auto;
 
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        text-decoration-line: underline;
-        color: #FF3446;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      text-decoration-line: underline;
+      color: #FF3446;
+
+      @include m-lg {
+        grid-row: 4 / 5;
       }
     }
 
@@ -595,7 +607,7 @@
       margin-top: 25px;
 
       @include m-lg {
-        grid-row: 4 / 5;
+        grid-row: 5 / 6;
         margin-top: 30px;
       }
 

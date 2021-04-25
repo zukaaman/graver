@@ -21,6 +21,25 @@
     }
   }
 
+  .slider--destroy {
+
+    .plaques-slider-pagination,
+    .plaques-slider-button-prev,
+    .plaques-slider-button-next {
+      display: none;
+    }
+
+    .plaques-slider {
+      margin-bottom: 20px;
+
+      .slider-list {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-gap: 30px;
+      }
+    }
+  }
+
   .plaques-slider {
     padding: 45px 0 35px;
 
@@ -256,6 +275,13 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+  }
+
+  .go-to-page__link {
+
+    &.go-to-page__link--remove {
+      display: none;
     }
   }
 }

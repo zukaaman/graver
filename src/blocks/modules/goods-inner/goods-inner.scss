@@ -279,7 +279,35 @@
 
   .goods-list {
     padding: 0;
+
+    &.goods-list--destroy {
+
+      .goods-slider-pagination,
+      .goods-slider-pagination--2,
+      .goods-slider-button-prev,
+      .goods-slider-button-prev--2,
+      .goods-slider-button-next,
+      .goods-slider-button-next--2 {
+        display: none;
+      }
+
+      .slider-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+
+        @include m-md {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include m-lg {
+          grid-gap: 45px;
+        }
+      }
+    }
   }
+
+
 
   .goods-inner-slider,
   .goods-inner-slider--2 {
@@ -507,6 +535,13 @@
           display: none;
         }
       }
+    }
+  }
+
+  .go-to-page__link {
+
+    &.go-to-page__link--remove {
+      display: none;
     }
   }
 }

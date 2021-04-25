@@ -36,6 +36,15 @@
     justify-content: center;
     margin-top: 15px;
     width: 100%;
+    // max-height: 380px;
+
+    &.engraving-top-list--open {
+      // max-height: none;
+
+      .engraving-top-list__item {
+        display: block;
+      }
+    }
 
     @include m-lg {
       margin-top: 30px;
@@ -46,6 +55,7 @@
       width: calc((100% - 15px) / 2);
       height: 80px;
       margin-right: 15px;
+      display: none;
 
       border-radius: 3px;
       box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -54,6 +64,15 @@
 
       transition: 0.3s;
       cursor: pointer;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: block;
+      }
 
       @include m-sm {
         height: 120px;
@@ -192,6 +211,13 @@
 
         font-size: 18px;
       }
+    }
+  }
+
+  .go-to-page__link {
+
+    &.go-to-page__link--remove {
+      display: none;
     }
   }
 }

@@ -26,6 +26,29 @@
     }
   }
 
+  .slider--destroy {
+
+    .templates-slider-pagination,
+    .templates-slider-button-prev,
+    .templates-slider-button-next {
+      display: none;
+    }
+
+    .templates-slider {
+      margin-bottom: 20px;
+
+      .slider-list {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-gap: 15px;
+
+        @include m-lg {
+          grid-gap: 30px;
+        }
+      }
+    }
+  }
+
   .templates-slider {
     padding: 45px 0 35px;
 
@@ -291,6 +314,13 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+  }
+
+  .go-to-page__link {
+
+    &.go-to-page__link--remove {
+      display: none;
     }
   }
 }
